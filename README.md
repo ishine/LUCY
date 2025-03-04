@@ -11,8 +11,10 @@ pip install flash-attn --no-build-isolation
 ```
 
 ## Training
-
-Stage 2 & 3 Training
+### Stage 1 
+Aligned audio encoder is available [here](https://huggingface.co/VITA-MLLM/LUCY-Audio-Encoder-110kh).
+### Stage 2 & 3 Training
+Run the following scripts to continue training stage 2 and stage 3.
 ```
 ./s2p0.sh
 ./s2p1.sh
