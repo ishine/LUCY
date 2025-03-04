@@ -11,12 +11,13 @@ pip install flash-attn --no-build-isolation
 ```
 
 ## Training
-Stage 1 Audio Encoder is available at 
+
 Stage 2 & 3 Training
+```
 ./s2p0.sh
 ./s2p1.sh
 ./s3.sh
-
+```
 
 ## Demo of Emotion Control
 https://github.com/user-attachments/assets/80120730-a37b-4ed5-8da6-7584156a6a67
