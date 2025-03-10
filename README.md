@@ -87,9 +87,9 @@ pip install flash-attn --no-build-isolation
 ### Dataset
 - Stage 2: [AudioQA-1M](https://huggingface.co/datasets/VITA-MLLM/AudioQA-1M)
 - Stage 3:
-    - Emotion Understanding and Control Dataset
-    - Function Call Dataset
-    - Natural Conversation Dataset
+    - [Emotion Understanding and Control Dataset](https://huggingface.co/datasets/VITA-MLLM/Emotion_NaturalConv_FunctionCall/tree/main/Emotion_Control)
+    - [Function Call Dataset](https://huggingface.co/datasets/VITA-MLLM/Emotion_NaturalConv_FunctionCall/tree/main/Function_Call)
+    - [Natural Conversation Dataset](https://huggingface.co/datasets/VITA-MLLM/Emotion_NaturalConv_FunctionCall/tree/main/Natural_Conv)
 
 ### Training
 #### Stage 1 
