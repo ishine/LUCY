@@ -84,6 +84,13 @@ pip install flash-attn --no-build-isolation
 ]
 ```
 
+### Dataset
+- Stage 2: [AudioQA-1M](https://huggingface.co/datasets/VITA-MLLM/AudioQA-1M)
+- Stage 3:
+    - Emotion Understanding and Control Dataset
+    - Function Call Dataset
+    - Natural Conversation Dataset
+
 ### Training
 #### Stage 1 
 - Aligned audio encoder is available [here](https://huggingface.co/VITA-MLLM/LUCY-Audio-Encoder-110kh).
