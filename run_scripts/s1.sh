@@ -6,7 +6,7 @@ ME=${ME%.*}
 TIMESTAMP=$(date '+%m%d%y-%H%M%S')
 
 OUTPUT_DIR=${WORK_DIR}/outputs/${ME}
-CACHE_DIR=/mnt/data/hetinggao/models
+CACHE_DIR=models
 MODEL_NAME_OR_PATH="models/Qwen2-7B-Instruct"
 AUDIO_ENCODER="models/audio-encoder-Qwen2-7B-instruct-weight-base-11wh-tunning"
 
