@@ -107,8 +107,10 @@ pip install flash-attn --no-build-isolation
     bash run_scripts/s3.sh
     ```
 ### 📐 Inference
-
-
+- Run the following script to perform inference.
+    ```
+    bash run_scripts/demo.sh
+    ```
 
 # 🤖 Demo
 ## Demo of Emotion Control
