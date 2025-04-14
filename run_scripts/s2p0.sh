@@ -29,12 +29,12 @@ else
 	LAUNCH_CMD="torchrun $DISTRIBUTED_ARGS $TRAINING_SCRPT"
 fi
 $LAUNCH_CMD \
-	--deepspeed config/zero2.json\
+    --deepspeed config/zero2.json\
     --model_type "qwen2" \
-	--initialize_additional_modules True \
+    --initialize_additional_modules True \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --audio_encoder $AUDIO_ENCODER \
-	--audio_projector_type "identity" \
+    --audio_projector_type "identity" \
     --freeze_backbone True \
     --freeze_audio_encoder_adapter True \
     --freeze_audio_encoder True \
@@ -43,7 +43,7 @@ $LAUNCH_CMD \
     --per_device_train_batch_size 12 \
     --per_device_eval_batch_size 12 \
     --add_codec_target True \
-	--num_train_epochs 5 \
+    --num_train_epochs 5 \
     --load_best_model_at_end True \
     --save_steps 400 \
     --save_total_limit 3 \
@@ -68,7 +68,6 @@ $LAUNCH_CMD \
     --eval_data_jsons $EVAL_DATA_JSONS \
     --text_additional "EOT" "PAD_T" "BOT" "ANS_T" "TTS" "TQA" "TQAA" \
     --audio_additional "EOA" "PAD_A" "BOA" "ANS_A" "ASR" "AQA" "AQAA" "M29" "F10" "ER" \
-    --asr_template /mnt/data/hetinggao/manifest/asr_prompts/asr_template.json \
     --tasks ${TASKS} \
     --output_dir ${OUTPUT_DIR} \
     --sample_rate 16000 \
@@ -76,8 +75,8 @@ $LAUNCH_CMD \
     --dataloader_num_workers 2 \
     --remove_unused_columns False \
     --max_keep_sample_size $((25*16000)) \
-	--tune_text_embed True \
-	--tie_word_embeddings True \
-	--loss_reduction mean \
-	--max_input_length 1500 \
-	--use_last_turn_if_codec True \
+    --tune_text_embed True \
+    --tie_word_embeddings True \
+    --loss_reduction mean \
+    --max_input_length 1500 \
+    --use_last_turn_if_codec True \
